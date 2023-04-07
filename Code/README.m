@@ -1,5 +1,6 @@
-% Readme for Ziegler et al. 2023
-% 
+% Readme for Ziegler et al. 2023 (in revision)
+% https://github.com/GrohLab/Ziegler_et_al_2023
+
 % This script plots aggregated spiking activity from mouse thalamus and somatosensory cortex, recorded in vivo. 
 % Please see the manuscript and supplementary files for futher descriptions of the data sets. 
 % Please contact Rebecca Mease for any further questions
