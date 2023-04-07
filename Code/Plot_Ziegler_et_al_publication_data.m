@@ -1,6 +1,6 @@
 %% 
 % To reproduce figures from Ziegler et al.
-% 1. Please replace basedir with'<DATA_DOWNLOAD_LOCATION>\Ziegler_et_al_Supplementary_Data\Data_tables'
+% 1. Please replace basedir with'<DATA_DOWNLOAD_LOCATION>\Ziegler_et_al_in_vivo_ephys\Data'
 % 2. Please add the helper_functions directory to the Matlab path.
 % 3. Please download and add the violinplot libary to the Matlab path: https://github.com/bastibe/Violinplot-Matlab
 
@@ -9,7 +9,7 @@ close all
 
 %Ziegler_et_al_in_vivo_ephys\Data_tables
 basedir='\\lsdf02.urz.uni-heidelberg.de\sd19b001\PainData\Analysis_PainPaper1\Ziegler_et_al_Supplementary_Data\Data_tables'
-basedir='C:\Users\Rebecca Mease\Documents\local_sds_working\Ziegler_et_al_Supplementary_Data\Data_tables'
+basedir='C:\Users\Rebecca Mease\Documents\local_sds_working\\Ziegler_et_al_in_vivo_ephys\Data'
 cd(basedir);
 %% Figure 1
 clearvars -except basedir
@@ -27,7 +27,7 @@ VPL_S1_variable_powers_script
 clearvars -except basedir
 %Figure 3b-h (and related Figure S8c1-c3,d)
 VPL_ML_script;
-%Fix violin for RP
+
 
 %% Figure 4
 clearvars -except basedir
@@ -40,6 +40,7 @@ S1_stgt_L5_L_script
 %Remaining data in Supplemental Excel file 
 
 %% Figure 6
+clearvars -except basedir
 %Figure 6b
 PlotFig6B;
 %Figure 6c in supplementary data file: Fig6c_L5_l5_chr_light_response_m393pt1_snipped_514.fig
@@ -49,6 +50,7 @@ PlotFig6B;
 %% Figure S1
 % All data in figure.
 %% Figure S2
+clearvars -except basedir
 %Figure S2 a,b
 PlotFigS2;
 %Figure S2 c

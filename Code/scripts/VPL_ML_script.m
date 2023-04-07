@@ -504,8 +504,9 @@ probs_l=cellfun(@(x) mean(double(x>0)),Ctest);
 
 fig=figure;
 colors=[L_color; [.4 .4 .4];[0 .2 .7];];
+%conflict with new release of violin plot
 %v=violinplot([probs_l probs_mech probs_ml ],{'L','M','ML'},'ShowBox',true,'ShowData',true,'MarkerSize',10,'ShowWhiskers',false,'BoxColor',[0 0 0],'ViolinColor',colors);
-for j=1:numel(v)
-    v(j).MedianPlot.SizeData=100;
-    v(j).MedianPlot.MarkerFaceColor=[0 0 0];
-end
+% for j=1:numel(v)
+%     v(j).MedianPlot.SizeData=100;
+%     v(j).MedianPlot.MarkerFaceColor=[0 0 0];
+% end
